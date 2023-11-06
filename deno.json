@@ -1,0 +1,16 @@
+{
+    "tasks": {
+     "play": "deno run -A play.ts",
+     "print-feeds": "deno run -A print-feeds.ts"
+    },
+     "fmt": {
+         "useTabs": false,
+         "lineWidth": 120,
+         "indentWidth": 2,
+         "semiColons": true,
+         "singleQuote": true,
+         "proseWrap": "preserve",
+         "include": ["*.ts","lib/**/*.ts","lib/services/*.ts"],
+         "exclude": ["src/testdata/", "data/fixtures/**/*.ts"]
+       }
+     }
