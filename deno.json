@@ -1,7 +1,8 @@
 {
     "tasks": {
      "play": "deno run -A play.ts",
-     "print-feeds": "deno run -A print-feeds.ts"
+     "print-feeds": "deno run -A print-feeds.ts",
+     "server": "deno run -A server.ts"
     },
      "fmt": {
          "useTabs": false,
