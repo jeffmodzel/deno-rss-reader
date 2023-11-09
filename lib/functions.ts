@@ -31,10 +31,14 @@ export const loadFeeds = async (configFeeds: ConfigFeed[]): Promise<DisplayFeed[
           items: [],
         };
 
-        feed.entries.forEach((entry) => {
+        // deno-lint-ignore no-explicit-any
+        feed.entries.forEach((entry: any) => {
           d.items.push({
             id: entry.id,
             title: entry.title.value,
+            description: entry.description && entry.description.value
+              ? entry.description.value as string
+              : 'No description available',
           });
         });
 
@@ -77,7 +81,11 @@ export const getItemsHtml = (displayFeeds: DisplayFeed[], id: string): string =>
   const html: string[] = [];
 
   found.items.forEach((item) => {
-    html.push(`<div><h4>${item.title}</h4></div>`);
+    html.push(`
+    <div>
+       <h4 onclick="console.log('test test test');">${item.title}</h4>
+       <div class="w3-container w3-hide">${item.description}</div>   
+    </div>`);
   });
 
   return html.join('');

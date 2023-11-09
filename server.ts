@@ -76,6 +76,6 @@ if (import.meta.main) {
     console.log(`HTTP server running. Access it at: http://localhost:8080/`);
     Deno.serve({ port }, handler);
   } else {
-    warn('Web server no t running');
+    warn('Web server not running');
   }
 }
