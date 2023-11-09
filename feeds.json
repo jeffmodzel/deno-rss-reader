@@ -1,21 +1,37 @@
 [
- {
-    "url":"https://buttondown.email/denonews/rss",
-    "enabled": true
- },
- {
-    "url":"https://www.digginoakisland.com/feed.xml",
-    "enabled": false
- },
- {
-    "url":"https://www.aboutamazon.com/news/aws.rss",
-    "enabled": false
- },
- {
-    "url":"https://aws.amazon.com/blogs/contact-center/feed/",
-    "enabled": true
- }
- 
- 
-
+   {
+      "id": "DENO_NEWS",
+      "url": "https://buttondown.email/denonews/rss",
+      "enabled": true
+   },
+   {
+      "id": "DIGGIN_OAK_ISLAND",
+      "url": "https://www.digginoakisland.com/feed.xml",
+      "enabled": true
+   },
+   {
+      "id": "AWS_NEWS",
+      "url": "https://www.aboutamazon.com/news/aws.rss",
+      "enabled": true
+   },
+   {
+      "id": "AWS_CONNECT",
+      "url": "https://aws.amazon.com/blogs/contact-center/feed/",
+      "enabled": true
+   },
+   {
+      "id": "NEWSTACK",
+      "url": "https://thenewstack.io/blog/feed/",
+      "enabled": true
+   },
+   {
+      "id": "AWS_ARCHITECTURE",
+      "url": "https://aws.amazon.com/blogs/architecture/feed/",
+      "enabled": true
+   },
+   {
+      "id": "YAHOO_NEWS",
+      "url": "https://www.yahoo.com/news/rss",
+      "enabled": true
+   }
 ]

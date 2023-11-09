@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+    <script src="https://unpkg.com/htmx.org@1.9.7"
+        integrity="sha384-EAzY246d6BpbWR7sQ8+WEm40J8c3dHFsqC58IgPlh4kMbRRI6P6WA+LA/qGAyAu8"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="w3-panel">
+        <h1>RSS Feeds</h1>
+    </div>
+
+    
+
+    <div hx-get="/title/NEWSTACK" hx-trigger="load delay:2s" class="w3-container w3-red">
+    </div>
+
+    <div class="w3-container">
+        <p>The w3-container class is an important w3.CSS class.</p>
+
+        <div class="w3-blue">some stuff</div>
+    </div> 
+
+</body>
+
+</html>

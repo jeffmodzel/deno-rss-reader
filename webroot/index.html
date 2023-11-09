@@ -1,17 +1,75 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
     <script src="https://unpkg.com/htmx.org@1.9.7"
         integrity="sha384-EAzY246d6BpbWR7sQ8+WEm40J8c3dHFsqC58IgPlh4kMbRRI6P6WA+LA/qGAyAu8"
         crossorigin="anonymous"></script>
+    <script defer src="app.js"></script>
+
+    <style>
+        .pointer {cursor: pointer;}
+    </style>
 </head>
 
-<body>
-    <h1>page title here</h1>
+<body class="w3-flat-wet-asphalt">
+    <div class="w3-panel">
+        <h1>RSS Feeds</h1>
+    </div>
 
-    
+    <div class="w3-container w3-margin-bottom">
+        <div hx-get="/title/YAHOO_NEWS" hx-trigger="load delay:1s" class="w3-container w3-purple">
+        </div>
+        <div id="YAHOO_NEWS_ITEMS" hx-get="/items/YAHOO_NEWS" hx-trigger="load delay:2s" class="w3-container w3-hide">
+        </div>
+    </div>
 
-    <div hx-get="/messages" hx-trigger="load delay:3s">
+    <div class="w3-container w3-margin-bottom">
+        <div hx-get="/title/AWS_NEWS" hx-trigger="load delay:1s" class="w3-container w3-amber">
+        </div>
+        <div id="AWS_NEWS_ITEMS" hx-get="/items/AWS_NEWS" hx-trigger="load delay:2s" class="w3-container w3-hide">
+        </div>
+    </div>
+
+    <div class="w3-container w3-margin-bottom">
+        <div hx-get="/title/AWS_ARCHITECTURE" hx-trigger="load delay:1s" class="w3-container w3-orange">
+        </div>
+        <div id="AWS_ARCHITECTURE_ITEMS" hx-get="/items/AWS_ARCHITECTURE" hx-trigger="load delay:2s" class="w3-container w3-hide">
+        </div>
+    </div>
+
+    <div class="w3-container w3-margin-bottom">
+        <div hx-get="/title/NEWSTACK" hx-trigger="load delay:1s" class="w3-container w3-blue">
+        </div>
+        <div id="NEWSTACK_ITEMS" hx-get="/items/NEWSTACK" hx-trigger="load delay:2s" class="w3-container w3-hide">
+        </div>
+    </div>
+
+    <div class="w3-container w3-margin-bottom">
+        <div hx-get="/title/AWS_CONNECT" hx-trigger="load delay:1s" class="w3-container w3-amber">
+        </div>
+        <div id="AWS_CONNECT_ITEMS" hx-get="/items/AWS_CONNECT" hx-trigger="load delay:2s" class="w3-container w3-hide">
+        </div>
+    </div>
+
+    <div class="w3-container w3-margin-bottom">
+        <div hx-get="/title/DIGGIN_OAK_ISLAND" hx-trigger="load delay:2s" class="w3-container w3-green">
+        </div>
+        <div id="DIGGIN_OAK_ISLAND_ITEMS" hx-get="/items/DIGGIN_OAK_ISLAND" hx-trigger="load delay:2s" class="w3-container w3-hide">
+        </div>
+    </div>
+
+    <div class="w3-container w3-margin-bottom">
+        <div hx-get="/title/DENO_NEWS" hx-trigger="load delay:3s" class="w3-container w3-indigo">
+        </div>
+        <div id="DENO_NEWS_ITEMS" hx-get="/items/DENO_NEWS" hx-trigger="load delay:3s" class="w3-container w3-hide">
+        </div>
+    </div>
+
+    <div class="w3-container">
+        <div hx-get="/title/SOME_ID" hx-trigger="load delay:2s" class="w3-container w3-red">
+        </div>
     </div>
 
 </body>
