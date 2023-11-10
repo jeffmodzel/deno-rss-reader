@@ -2,7 +2,7 @@ import { serveFile } from 'https://deno.land/std@0.202.0/http/file_server.ts';
 import { parseFeed } from 'https://deno.land/x/rss/mod.ts';
 
 import { ConfigFeed, DisplayFeed } from './lib/interfaces.ts';
-import { getItemsHtml, getTitleHtml, loadFeeds } from './lib/functions.ts';
+import { getItemsHtml, getTitleHtml, loadFeeds, removeItem } from './lib/functions.ts';
 import { error, info, warn } from './lib/console.ts';
 
 // const response = await fetch('https://thenewstack.io/blog/feed/');
@@ -41,10 +41,10 @@ if (import.meta.main) {
   const ITEMS_ROUTE = new URLPattern({ pathname: '/items/:id' });
 
   const handler = async (request: Request): Promise<Response> => {
-    console.log(request);
-
+    
     const pathname = new URL(request.url).pathname;
-    console.log(pathname);
+    info(`Request: ${pathname}`);
+    console.log(request);
 
     if (pathname === '/') {
       console.log('server index.html');
@@ -54,6 +54,11 @@ if (import.meta.main) {
     if (pathname === '/app.js') {
       info('app.js');
       return await serveFile(request, './webroot/app.js');
+    }
+
+    if (pathname === '/removeItem') {
+      const formdata = await request.formData();
+      removeItem(displayFeeds, formdata);
     }
 
     let match = TITLE_ROUTE.exec(request.url);

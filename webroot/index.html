@@ -11,6 +11,7 @@
     <style>
         .pointer {cursor: pointer;}
     </style>
+    <title>RSS Feeds</title>
 </head>
 
 <body class="w3-flat-wet-asphalt">
@@ -18,11 +19,32 @@
         <h1>RSS Feeds</h1>
     </div>
 
+    <div id="trg">
+        <button hx-post="/removeItem" hx-swap="none" hx-target="#trg" hx-vals='{"feedId":"https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100003114"}'>
+            Click Me
+          </button>
+    </div>
+
     <div class="w3-container w3-margin-bottom">
         <div hx-get="/title/YAHOO_NEWS" hx-trigger="load delay:1s" class="w3-container w3-purple">
         </div>
         <div id="YAHOO_NEWS_ITEMS" hx-get="/items/YAHOO_NEWS" hx-trigger="load delay:2s" class="w3-container w3-hide w3-border w3-border-purple">
         </div>
+    </div>
+
+    <div class="w3-panel">
+        <h1>Culture and Fun Stuff</h1>
+    </div>
+
+    <div class="w3-container w3-margin-bottom">
+        <div hx-get="/title/DIGGIN_OAK_ISLAND" hx-trigger="load delay:1s" class="w3-container w3-green">
+        </div>
+        <div id="DIGGIN_OAK_ISLAND_ITEMS" hx-get="/items/DIGGIN_OAK_ISLAND" hx-trigger="load delay:2s" class="w3-container w3-hide">
+        </div>
+    </div>
+
+    <div class="w3-panel">
+        <h1>Tech Stuff</h1>
     </div>
 
     <div class="w3-container w3-margin-bottom">
@@ -33,9 +55,16 @@
     </div>
 
     <div class="w3-container w3-margin-bottom">
-        <div hx-get="/title/AWS_ARCHITECTURE" hx-trigger="load delay:1s" class="w3-container w3-orange">
+        <div hx-get="/title/AWS_ARCHITECTURE" hx-trigger="load delay:2s" class="w3-container w3-orange">
         </div>
-        <div id="AWS_ARCHITECTURE_ITEMS" hx-get="/items/AWS_ARCHITECTURE" hx-trigger="load delay:2s" class="w3-container w3-hide w3-border w3-border-orange">
+        <div id="AWS_ARCHITECTURE_ITEMS" hx-get="/items/AWS_ARCHITECTURE" hx-trigger="load delay:3s" class="w3-container w3-hide w3-border w3-border-orange">
+        </div>
+    </div>
+
+    <div class="w3-container w3-margin-bottom">
+        <div hx-get="/title/AWS_CONNECT" hx-trigger="load delay:2s" class="w3-container w3-amber">
+        </div>
+        <div id="AWS_CONNECT_ITEMS" hx-get="/items/AWS_CONNECT" hx-trigger="load delay:3s" class="w3-container w3-hide">
         </div>
     </div>
 
@@ -43,20 +72,6 @@
         <div hx-get="/title/NEWSTACK" hx-trigger="load delay:1s" class="w3-container w3-blue">
         </div>
         <div id="NEWSTACK_ITEMS" hx-get="/items/NEWSTACK" hx-trigger="load delay:2s" class="w3-container w3-hide">
-        </div>
-    </div>
-
-    <div class="w3-container w3-margin-bottom">
-        <div hx-get="/title/AWS_CONNECT" hx-trigger="load delay:1s" class="w3-container w3-amber">
-        </div>
-        <div id="AWS_CONNECT_ITEMS" hx-get="/items/AWS_CONNECT" hx-trigger="load delay:2s" class="w3-container w3-hide">
-        </div>
-    </div>
-
-    <div class="w3-container w3-margin-bottom">
-        <div hx-get="/title/DIGGIN_OAK_ISLAND" hx-trigger="load delay:2s" class="w3-container w3-green">
-        </div>
-        <div id="DIGGIN_OAK_ISLAND_ITEMS" hx-get="/items/DIGGIN_OAK_ISLAND" hx-trigger="load delay:2s" class="w3-container w3-hide">
         </div>
     </div>
 

@@ -1,19 +1,12 @@
-import { serveFile } from 'https://deno.land/std@0.202.0/http/file_server.ts';
 import { parseFeed } from 'https://deno.land/x/rss/mod.ts';
-import { colors } from 'https://deno.land/x/cliffy@v1.0.0-rc.3/ansi/colors.ts';
-
-import { ulid } from "https://deno.land/x/ulid@v0.3.0/mod.ts";
-
+import { ulid } from 'https://deno.land/x/ulid@v0.3.0/mod.ts';
+import { Html5Entities } from 'https://deno.land/x/html_entities@v1.0/mod.js';
 import { ConfigFeed, DisplayFeed } from './interfaces.ts';
-
-
-const error = colors.bold.red;
-const warn = colors.bold.yellow;
-const info = colors.bold.blue;
+import { error, info } from './console.ts';
 
 export const loadFeeds = async (configFeeds: ConfigFeed[]): Promise<DisplayFeed[]> => {
-  console.log('loadFeeds()');
-  console.log(configFeeds);
+  info('loadFeeds()');
+  //console.log(configFeeds);
 
   const retval: DisplayFeed[] = [];
 
@@ -21,7 +14,7 @@ export const loadFeeds = async (configFeeds: ConfigFeed[]): Promise<DisplayFeed[
     console.log(config);
     if (config.enabled) {
       try {
-        console.log(info(`INFO - Loading ${config.id} | ${config.url}`));
+        info(`Loading ${config.id} | ${config.url}`);
         const response = await fetch(config.url);
         const xml = await response.text();
         const feed = await parseFeed(xml);
@@ -32,9 +25,15 @@ export const loadFeeds = async (configFeeds: ConfigFeed[]): Promise<DisplayFeed[
         if (feed.published) {
           published = feed.published.toLocaleString();
         } else if (feed.publishedRaw) {
-          published = feed.publishedRaw;        
+          published = feed.publishedRaw;
         } else if (feed.updateDate) {
-          published = feed.updateDate.toLocaleString();  
+          published = feed.updateDate.toLocaleString();
+        }
+
+        // Get link
+        let link = null;
+        if (feed.links && feed.links.length > 0) {
+          link = feed.links[0];
         }
 
         const d: DisplayFeed = {
@@ -43,22 +42,50 @@ export const loadFeeds = async (configFeeds: ConfigFeed[]): Promise<DisplayFeed[
           type: feed.type as string,
           published,
           items: [],
+          ...(link && { link }),
         };
 
         // deno-lint-ignore no-explicit-any
         feed.entries.forEach((entry: any) => {
+          published = 'UNKNOWN';
+          if (entry.published) {
+            published = entry.published.toLocaleString();
+          } else if (entry.publishedRaw) {
+            published = entry.publishedRaw;
+          } else if (entry.updateDate) {
+            published = entry.updateDate.toLocaleString();
+          }
+
+          let description = 'No description available';
+          if (entry.description && entry.description.value) {
+            const tempDesc = entry.description.value as string;
+
+            if (tempDesc.trim().startsWith('&lt;')) {
+              description = Html5Entities.decode(tempDesc);
+            } else {
+              description = tempDesc;
+            }
+          }
+
+          let link = null;
+          if (entry.links && entry.links.length > 0) {
+            if (entry.links[0].href) {
+              link = entry.links[0].href;
+            }
+          }
+
           d.items.push({
             id: entry.id,
             title: entry.title.value,
-            description: entry.description && entry.description.value
-              ? entry.description.value as string
-              : 'No description available',
+            published,
+            description,
+            ...(link && { link }),
           });
         });
 
         retval.push(d);
       } catch (e) {
-        console.log(error('ERROR'));
+        error('Parsing feeds');
         console.log(e);
       }
     }
@@ -78,7 +105,7 @@ export const getTitleHtml = (displayFeeds: DisplayFeed[], id: string): string =>
 
   return `
   <div class="w3-display-container">
-    <div onclick="hide('${id}_ITEMS');" class="pointer"><h3>${found.title} | ${found.type}</h3></div>
+    <div onclick="hide('${id}_ITEMS');" class="pointer"><h3>${found.title} | ${found.type} | <a href="${found.link}">Link</a></h3></div>
     <div class="w3-display-right"><h3>${found.published}</h3></div>
   </div>
   `;
@@ -98,14 +125,29 @@ export const getItemsHtml = (displayFeeds: DisplayFeed[], id: string): string =>
   const html: string[] = [];
 
   found.items.forEach((item) => {
-    const id = ulid();
-    
+    const descriptionHtmlId = "a" + ulid(); // HTML4 ids must start with a letter
+    const outerHtmlId = "a" + ulid(); // HTML4 ids must start with a letter
+
     html.push(`
-    <div class="w3-border-bottom w3-hover-blue-gray">
-       <h4 onclick="hide('${id}');" class="pointer">${item.title}</h4>
-       <div id="${id}" class="w3-container w3-hide">${item.description}</div>   
+    <div id="${outerHtmlId}" class="w3-display-container w3-border-bottom w3-hover-blue-gray">
+       <div class="w3-display-top-left">
+         <div class="w3-cell"><h4 class="pointer" onclick="hide('${descriptionHtmlId}');">${item.title} | <a href="${item.link}">Link</a></h4></div>
+         <div class="w3-cell">&nbsp;<button class="w3-button w3-tiny w3-khaki" hx-post="/removeItem" hx-swap="delete" hx-target="#${outerHtmlId}" hx-vals='{"feedKey":"${id}","itemId":"${item.id}"}'>Remove</button></div>
+       </div>
+       <div id="${descriptionHtmlId}" class="w3-container w3-hide">${item.description}</div>
+       <div class="w3-display-topright">${item.published}</div>
     </div>`);
   });
 
   return html.join('');
 };
+
+export const removeItem = (displayFeeds: DisplayFeed[], formData: FormData) => {
+  info('removeItem()');
+  console.log(formData);
+
+  // for (const pair of formdata.entries()) {
+  //   console.log(pair);
+  // }
+
+}
