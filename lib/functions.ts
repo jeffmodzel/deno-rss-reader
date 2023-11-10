@@ -1,7 +1,11 @@
 import { serveFile } from 'https://deno.land/std@0.202.0/http/file_server.ts';
 import { parseFeed } from 'https://deno.land/x/rss/mod.ts';
 import { colors } from 'https://deno.land/x/cliffy@v1.0.0-rc.3/ansi/colors.ts';
+
+import { ulid } from "https://deno.land/x/ulid@v0.3.0/mod.ts";
+
 import { ConfigFeed, DisplayFeed } from './interfaces.ts';
+
 
 const error = colors.bold.red;
 const warn = colors.bold.yellow;
@@ -23,11 +27,21 @@ export const loadFeeds = async (configFeeds: ConfigFeed[]): Promise<DisplayFeed[
         const feed = await parseFeed(xml);
 
         //console.log(feed);
+        // Determine published date
+        let published = 'UNKNOWN';
+        if (feed.published) {
+          published = feed.published.toLocaleString();
+        } else if (feed.publishedRaw) {
+          published = feed.publishedRaw;        
+        } else if (feed.updateDate) {
+          published = feed.updateDate.toLocaleString();  
+        }
 
         const d: DisplayFeed = {
           id: config.id,
           title: feed.title.value,
           type: feed.type as string,
+          published,
           items: [],
         };
 
@@ -58,12 +72,15 @@ export const getTitleHtml = (displayFeeds: DisplayFeed[], id: string): string =>
 
   if (!found) {
     return `
-    <div "><h3>ERROR - Missing ${id}</h3></div>
+    <div><h3>ERROR - Missing ${id}</h3></div>
         `;
   }
 
   return `
-  <div onclick="hide('${id}_ITEMS');" class="pointer"><h3>${found.title} | ${found.type}</h3></div>
+  <div class="w3-display-container">
+    <div onclick="hide('${id}_ITEMS');" class="pointer"><h3>${found.title} | ${found.type}</h3></div>
+    <div class="w3-display-right"><h3>${found.published}</h3></div>
+  </div>
   `;
 };
 
@@ -81,10 +98,12 @@ export const getItemsHtml = (displayFeeds: DisplayFeed[], id: string): string =>
   const html: string[] = [];
 
   found.items.forEach((item) => {
+    const id = ulid();
+    
     html.push(`
-    <div>
-       <h4 onclick="console.log('test test test');">${item.title}</h4>
-       <div class="w3-container w3-hide">${item.description}</div>   
+    <div class="w3-border-bottom w3-hover-blue-gray">
+       <h4 onclick="hide('${id}');" class="pointer">${item.title}</h4>
+       <div id="${id}" class="w3-container w3-hide">${item.description}</div>   
     </div>`);
   });
 

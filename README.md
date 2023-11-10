@@ -25,3 +25,19 @@ add links to everything
 figure out collapsible
 
 add limit filter (for too many entries)
+
+
+
+
+
+<script defer>
+    document.addEventListener('htmx:configRequest', function (evt) {
+      console.log({ configRequest: evt.detail });
+      const redirect = 'https://otherdomain';
+      evt.detail.path = `${redirect}${evt.detail.path}`;
+    });
+  </script>
+
+  <button hx-get="/htmx" hx-swap="outerHTML">
+    Click Me
+  </button>

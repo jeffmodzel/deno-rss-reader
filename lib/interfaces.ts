@@ -11,6 +11,7 @@ export interface DisplayFeed {
   id: string;
   title: string;
   type: string;
+  published: string;
   items: Item[];
 }
 
