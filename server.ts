@@ -1,18 +1,7 @@
 import { serveFile } from 'https://deno.land/std@0.202.0/http/file_server.ts';
-import { parseFeed } from 'https://deno.land/x/rss/mod.ts';
-
-import { ConfigFeed, DisplayFeed } from './lib/interfaces.ts';
-import { getItemsHtml, getTitleHtml, loadFeeds, removeItem } from './lib/functions.ts';
+import { ConfigFeed, ExcludeItem, DisplayFeed } from './lib/interfaces.ts';
+import { getItemsHtml, getTitleHtml, loadFeeds, removeItem, removeExcludeItems } from './lib/functions.ts';
 import { error, info, warn } from './lib/console.ts';
-
-// const response = await fetch('https://thenewstack.io/blog/feed/');
-// const xml = await response.text();
-// const feed = await parseFeed(xml);
-
-// const d: DisplayFeed = {
-//   title: feed.title.value,
-//   type: feed.type as string,
-// };
 
 const RUN_SERVER = true;
 
@@ -25,18 +14,20 @@ if (import.meta.main) {
   //
   // Load feeds
   //
-  const text = await Deno.readTextFile('feeds.json');
+  let text = await Deno.readTextFile('feeds.json');
   const configFeeds = JSON.parse(text) as ConfigFeed[];
   //console.log(configFeeds);
-  const displayFeeds = await loadFeeds(configFeeds);
+  let displayFeeds = await loadFeeds(configFeeds);
   console.log(displayFeeds);
+
+  text = await Deno.readTextFile('excludes.json');
+  let excludeItems = JSON.parse(text) as ExcludeItem[];
+  displayFeeds = removeExcludeItems(displayFeeds, excludeItems);
 
   //
   // Web server
   //
   const port = 8080;
-  // const BOOK_ROUTE = new URLPattern({ pathname: '/books/:id' });
-  // const MESSAGES_ROUTE = new URLPattern({ pathname: '/messages' });
   const TITLE_ROUTE = new URLPattern({ pathname: '/title/:id' });
   const ITEMS_ROUTE = new URLPattern({ pathname: '/items/:id' });
 
@@ -58,7 +49,10 @@ if (import.meta.main) {
 
     if (pathname === '/removeItem') {
       const formdata = await request.formData();
-      removeItem(displayFeeds, formdata);
+      excludeItems = removeItem(excludeItems, formdata);
+      //console.log(excludeItems);
+      Deno.writeTextFile('excludes.json', JSON.stringify(excludeItems,null,2));
+      info(`New exclude list count: ${excludeItems.length}`); 
     }
 
     let match = TITLE_ROUTE.exec(request.url);
