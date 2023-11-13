@@ -20,6 +20,11 @@
       "enabled": true
    },
    {
+      "key": "AWS_DEVELOPER",
+      "url": "https://aws.amazon.com/blogs/developer/feed/",
+      "enabled": true
+   },
+   {
       "key": "NEWSTACK",
       "url": "https://thenewstack.io/blog/feed/",
       "enabled": true
@@ -37,6 +42,21 @@
    {
       "key": "CNBC_NEWS",
       "url": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100003114",
+      "enabled": true
+   },
+   {
+      "key": "FOX_NEWS",
+      "url": "http://feeds.foxnews.com/foxnews/latest",
+      "enabled": true
+   },
+   {
+      "key": "DAWGS_BY_NATURE",
+      "url": "https://www.dawgsbynature.com/rss/current.xml",
+      "enabled": true
+   },
+   {
+      "key": "BROWNS_WIRE",
+      "url": "https://brownswire.usatoday.com/feed",
       "enabled": true
    }
 ]

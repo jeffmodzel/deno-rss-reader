@@ -24,6 +24,9 @@ if (import.meta.main) {
   let excludeItems = JSON.parse(text) as ExcludeItem[];
   displayFeeds = removeExcludeItems(displayFeeds, excludeItems);
 
+  const x = displayFeeds.find(x=> x.key==='AWS_DEVELOPER');
+  console.log(x);
+
   //
   // Web server
   //

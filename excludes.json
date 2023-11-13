@@ -1,15 +1,5 @@
 [
   {
-    "key": "DIGGIN_OAK_ISLAND",
-    "itemId": "digginoakisland.podbean.com/0f9c208e-af81-3372-8786-ccb7df86c2e7",
-    "createdOn": "whatevs"
-  },
-  {
-    "key": "DIGGIN_OAK_ISLAND",
-    "itemId": "digginoakisland.podbean.com/cb14b9e8-7d6e-3aed-a3c7-a366e22656a9",
-    "createdOn": "whatevs"
-  },
-  {
     "key": "DENO_NEWS",
     "itemId": "https://buttondown.email/denonews/archive/deno-newsletter-37-v0210/",
     "createdOn": "11/11/2023, 8:52:57 AM"
@@ -673,5 +663,525 @@
     "key": "YAHOO_NEWS",
     "itemId": "mitch-mcconnell-standing-apart-changing-180204835.html",
     "createdOn": "11/11/2023, 9:17:44 AM"
+  },
+  {
+    "key": "AWS_NEWS",
+    "itemId": "https://www.aboutamazon.com/news/aws/f1-ai-insights-grand-prix",
+    "createdOn": "11/13/2023, 7:33:47 AM"
+  },
+  {
+    "key": "AWS_NEWS",
+    "itemId": "https://www.aboutamazon.com/news/aws/how-aws-activate-program-works",
+    "createdOn": "11/13/2023, 7:33:51 AM"
+  },
+  {
+    "key": "AWS_NEWS",
+    "itemId": "https://www.aboutamazon.com/news/aws/wiz-startup-assaf-rappaport-tips-for-founders",
+    "createdOn": "11/13/2023, 7:33:59 AM"
+  },
+  {
+    "key": "AWS_NEWS",
+    "itemId": "https://www.aboutamazon.com/aws/news/aws-cloud-institute-virtual-training-for-cloud-developers",
+    "createdOn": "11/13/2023, 7:34:05 AM"
+  },
+  {
+    "key": "AWS_CONNECT",
+    "itemId": "a5fd839e0155358627b4393d9d1d3ee108a8038f",
+    "createdOn": "11/13/2023, 7:34:25 AM"
+  },
+  {
+    "key": "AWS_CONNECT",
+    "itemId": "320a1d94ceeb5c493e22161ef061cefe65558bfd",
+    "createdOn": "11/13/2023, 7:34:38 AM"
+  },
+  {
+    "key": "AWS_CONNECT",
+    "itemId": "df9f62f4f4acab057c0edb52e3e77f068773175b",
+    "createdOn": "11/13/2023, 7:34:39 AM"
+  },
+  {
+    "key": "NEWSTACK",
+    "itemId": "https://thenewstack.io/?p=22723567",
+    "createdOn": "11/13/2023, 7:34:50 AM"
+  },
+  {
+    "key": "NEWSTACK",
+    "itemId": "https://thenewstack.io/?p=22723369",
+    "createdOn": "11/13/2023, 7:34:53 AM"
+  },
+  {
+    "key": "NEWSTACK",
+    "itemId": "https://thenewstack.io/?p=22723541",
+    "createdOn": "11/13/2023, 7:34:56 AM"
+  },
+  {
+    "key": "NEWSTACK",
+    "itemId": "https://thenewstack.io/?p=22723833",
+    "createdOn": "11/13/2023, 7:35:05 AM"
+  },
+  {
+    "key": "NEWSTACK",
+    "itemId": "https://thenewstack.io/?p=22723981",
+    "createdOn": "11/13/2023, 7:35:08 AM"
+  },
+  {
+    "key": "YAHOO_NEWS",
+    "itemId": "spot-yellowstone-critter-spying-coyote-170105620.html",
+    "createdOn": "11/13/2023, 7:35:33 AM"
+  },
+  {
+    "key": "CNBC_NEWS",
+    "itemId": "107332574",
+    "createdOn": "11/13/2023, 7:35:57 AM"
+  },
+  {
+    "key": "CNBC_NEWS",
+    "itemId": "107332589",
+    "createdOn": "11/13/2023, 7:35:59 AM"
+  },
+  {
+    "key": "CNBC_NEWS",
+    "itemId": "107331947",
+    "createdOn": "11/13/2023, 7:36:00 AM"
+  },
+  {
+    "key": "CNBC_NEWS",
+    "itemId": "107331962",
+    "createdOn": "11/13/2023, 7:36:01 AM"
+  },
+  {
+    "key": "CNBC_NEWS",
+    "itemId": "107331906",
+    "createdOn": "11/13/2023, 7:36:02 AM"
+  },
+  {
+    "key": "CNBC_NEWS",
+    "itemId": "107327443",
+    "createdOn": "11/13/2023, 7:36:03 AM"
+  },
+  {
+    "key": "CNBC_NEWS",
+    "itemId": "107332534",
+    "createdOn": "11/13/2023, 7:36:07 AM"
+  },
+  {
+    "key": "CNBC_NEWS",
+    "itemId": "107332561",
+    "createdOn": "11/13/2023, 7:36:17 AM"
+  },
+  {
+    "key": "CNBC_NEWS",
+    "itemId": "107332691",
+    "createdOn": "11/13/2023, 7:36:27 AM"
+  },
+  {
+    "key": "DIGGIN_OAK_ISLAND",
+    "itemId": "digginoakisland.podbean.com/33f35bf8-46c5-3455-b27c-48d525b715b6",
+    "createdOn": "11/13/2023, 7:36:42 AM"
+  },
+  {
+    "key": "DIGGIN_OAK_ISLAND",
+    "itemId": "digginoakisland.podbean.com/82dee61e-0746-3429-ba70-e4d6a7a8d380",
+    "createdOn": "11/13/2023, 7:36:43 AM"
+  },
+  {
+    "key": "DIGGIN_OAK_ISLAND",
+    "itemId": "digginoakisland.podbean.com/fad79ce1-ae6f-3ea4-847b-52268b701735",
+    "createdOn": "11/13/2023, 7:36:44 AM"
+  },
+  {
+    "key": "DIGGIN_OAK_ISLAND",
+    "itemId": "digginoakisland.podbean.com/74d36b0e-03e7-33d0-b40f-138a0cb10621",
+    "createdOn": "11/13/2023, 7:36:45 AM"
+  },
+  {
+    "key": "DIGGIN_OAK_ISLAND",
+    "itemId": "digginoakisland.podbean.com/73aef5f0-3bfe-3781-8eea-e0e04e18f615",
+    "createdOn": "11/13/2023, 7:36:45 AM"
+  },
+  {
+    "key": "DIGGIN_OAK_ISLAND",
+    "itemId": "digginoakisland.podbean.com/84a384c4-3a7a-3191-ab06-dd634c4c0344",
+    "createdOn": "11/13/2023, 7:36:46 AM"
+  },
+  {
+    "key": "DIGGIN_OAK_ISLAND",
+    "itemId": "digginoakisland.podbean.com/cf8091ce-8502-383c-a5b8-6a266e1522cd",
+    "createdOn": "11/13/2023, 7:36:46 AM"
+  },
+  {
+    "key": "DIGGIN_OAK_ISLAND",
+    "itemId": "digginoakisland.podbean.com/d077403a-c499-343c-a489-62ab6cf3fbb7",
+    "createdOn": "11/13/2023, 7:36:47 AM"
+  },
+  {
+    "key": "AWS_ARCHITECTURE",
+    "itemId": "37be9ddd8514728af2c349b1aba039555944e679",
+    "createdOn": "11/13/2023, 11:27:54 AM"
+  },
+  {
+    "key": "AWS_ARCHITECTURE",
+    "itemId": "7aa33d435ef47a157498802f93150431c6fb7a9f",
+    "createdOn": "11/13/2023, 11:28:08 AM"
+  },
+  {
+    "key": "CNBC_NEWS",
+    "itemId": "107332254",
+    "createdOn": "11/13/2023, 11:35:35 AM"
+  },
+  {
+    "key": "CNBC_NEWS",
+    "itemId": "107332794",
+    "createdOn": "11/13/2023, 11:36:00 AM"
+  },
+  {
+    "key": "CNBC_NEWS",
+    "itemId": "107332696",
+    "createdOn": "11/13/2023, 11:36:06 AM"
+  },
+  {
+    "key": "CNBC_NEWS",
+    "itemId": "107323228",
+    "createdOn": "11/13/2023, 11:36:11 AM"
+  },
+  {
+    "key": "CNBC_NEWS",
+    "itemId": "107332697",
+    "createdOn": "11/13/2023, 11:36:11 AM"
+  },
+  {
+    "key": "CNBC_NEWS",
+    "itemId": "107331806",
+    "createdOn": "11/13/2023, 11:36:13 AM"
+  },
+  {
+    "key": "CNBC_NEWS",
+    "itemId": "107332774",
+    "createdOn": "11/13/2023, 11:36:15 AM"
+  },
+  {
+    "key": "CNBC_NEWS",
+    "itemId": "107330714",
+    "createdOn": "11/13/2023, 11:36:19 AM"
+  },
+  {
+    "key": "YAHOO_NEWS",
+    "itemId": "trump-demanded-straight-quid-pro-142749017.html",
+    "createdOn": "11/13/2023, 11:37:15 AM"
+  },
+  {
+    "key": "YAHOO_NEWS",
+    "itemId": "hospitals-special-protection-under-rules-202549138.html",
+    "createdOn": "11/13/2023, 11:37:19 AM"
+  },
+  {
+    "key": "YAHOO_NEWS",
+    "itemId": "m-not-sure-tell-dave-113000624.html",
+    "createdOn": "11/13/2023, 11:37:20 AM"
+  },
+  {
+    "key": "YAHOO_NEWS",
+    "itemId": "australia-apologise-half-century-thalidomide-011543060.html",
+    "createdOn": "11/13/2023, 11:37:26 AM"
+  },
+  {
+    "key": "YAHOO_NEWS",
+    "itemId": "tim-scott-drops-race-mere-030239091.html",
+    "createdOn": "11/13/2023, 11:37:28 AM"
+  },
+  {
+    "key": "YAHOO_NEWS",
+    "itemId": "secret-agents-protecting-bidens-granddaughter-125848844.html",
+    "createdOn": "11/13/2023, 11:37:31 AM"
+  },
+  {
+    "key": "YAHOO_NEWS",
+    "itemId": "threat-could-send-price-popular-180000664.html",
+    "createdOn": "11/13/2023, 11:37:36 AM"
+  },
+  {
+    "key": "YAHOO_NEWS",
+    "itemId": "trump-confuses-name-current-president-021333678.html",
+    "createdOn": "11/13/2023, 11:37:39 AM"
+  },
+  {
+    "key": "YAHOO_NEWS",
+    "itemId": "rucking-help-burn-fat-build-113301394.html",
+    "createdOn": "11/13/2023, 11:37:40 AM"
+  },
+  {
+    "key": "YAHOO_NEWS",
+    "itemId": "man-holding-drink-cup-full-195732016.html",
+    "createdOn": "11/13/2023, 11:37:43 AM"
+  },
+  {
+    "key": "YAHOO_NEWS",
+    "itemId": "netanyahu-says-hamas-refused-israeli-141726943.html",
+    "createdOn": "11/13/2023, 11:37:55 AM"
+  },
+  {
+    "key": "YAHOO_NEWS",
+    "itemId": "first-kind-boat-making-waves-130000153.html",
+    "createdOn": "11/13/2023, 11:37:55 AM"
+  },
+  {
+    "key": "NEWSTACK",
+    "itemId": "https://thenewstack.io/?p=22724002",
+    "createdOn": "11/13/2023, 11:38:38 AM"
+  },
+  {
+    "key": "NEWSTACK",
+    "itemId": "https://thenewstack.io/?p=22723647",
+    "createdOn": "11/13/2023, 11:38:43 AM"
+  },
+  {
+    "key": "NEWSTACK",
+    "itemId": "https://thenewstack.io/?p=22723335",
+    "createdOn": "11/13/2023, 11:39:14 AM"
+  },
+  {
+    "key": "DENO_NEWS",
+    "itemId": "https://buttondown.email/denonews/archive/51-announcing-the-new-slack-platform-powered-by/",
+    "createdOn": "11/13/2023, 1:59:54 PM"
+  },
+  {
+    "key": "DENO_NEWS",
+    "itemId": "https://buttondown.email/denonews/archive/52-deno-126-isolate-clouds-and-the-edge/",
+    "createdOn": "11/13/2023, 2:00:02 PM"
+  },
+  {
+    "key": "DENO_NEWS",
+    "itemId": "https://buttondown.email/denonews/archive/5819/",
+    "createdOn": "11/13/2023, 2:00:06 PM"
+  },
+  {
+    "key": "DENO_NEWS",
+    "itemId": "https://buttondown.email/denonews/archive/deno-november-update-our-biggest-release-ever/",
+    "createdOn": "11/13/2023, 5:56:19 PM"
+  },
+  {
+    "key": "DENO_NEWS",
+    "itemId": "https://buttondown.email/denonews/archive/50-the-javascript-trademark-fresh-11-and-deno-on/",
+    "createdOn": "11/13/2023, 5:59:19 PM"
+  },
+  {
+    "key": "DENO_NEWS",
+    "itemId": "https://buttondown.email/denonews/archive/53-deno-127-fresh-guides-and-a-haunted-script/",
+    "createdOn": "11/13/2023, 5:59:20 PM"
+  },
+  {
+    "key": "DENO_NEWS",
+    "itemId": "https://buttondown.email/denonews/archive/54-npm-compatibility-is-stabilized-in-128/",
+    "createdOn": "11/13/2023, 5:59:22 PM"
+  },
+  {
+    "key": "DENO_NEWS",
+    "itemId": "https://buttondown.email/denonews/archive/55-deno-v129-and-npm-install-heat/",
+    "createdOn": "11/13/2023, 5:59:23 PM"
+  },
+  {
+    "key": "DENO_NEWS",
+    "itemId": "https://buttondown.email/denonews/archive/56-deno-v131-a-look-back-at-2022-and-more/",
+    "createdOn": "11/13/2023, 5:59:25 PM"
+  },
+  {
+    "key": "CNBC_NEWS",
+    "itemId": "107333040",
+    "createdOn": "11/13/2023, 6:12:19 PM"
+  },
+  {
+    "key": "CNBC_NEWS",
+    "itemId": "107332881",
+    "createdOn": "11/13/2023, 6:12:23 PM"
+  },
+  {
+    "key": "CNBC_NEWS",
+    "itemId": "107332904",
+    "createdOn": "11/13/2023, 6:12:25 PM"
+  },
+  {
+    "key": "CNBC_NEWS",
+    "itemId": "107329465",
+    "createdOn": "11/13/2023, 6:12:27 PM"
+  },
+  {
+    "key": "CNBC_NEWS",
+    "itemId": "107332209",
+    "createdOn": "11/13/2023, 6:12:39 PM"
+  },
+  {
+    "key": "CNBC_NEWS",
+    "itemId": "107332096",
+    "createdOn": "11/13/2023, 6:12:40 PM"
+  },
+  {
+    "key": "CNBC_NEWS",
+    "itemId": "107332860",
+    "createdOn": "11/13/2023, 6:12:42 PM"
+  },
+  {
+    "key": "DIGGIN_OAK_ISLAND",
+    "itemId": "digginoakisland.podbean.com/da95df6d-f6de-3232-bb3b-952ce95e61d2",
+    "createdOn": "11/13/2023, 6:12:52 PM"
+  },
+  {
+    "key": "DIGGIN_OAK_ISLAND",
+    "itemId": "digginoakisland.podbean.com/572b223f-8492-32f1-b711-8dcf98ddcaca",
+    "createdOn": "11/13/2023, 6:12:53 PM"
+  },
+  {
+    "key": "DIGGIN_OAK_ISLAND",
+    "itemId": "digginoakisland.podbean.com/f3ee31ee-b3fd-3a48-9855-1045344a8ec7",
+    "createdOn": "11/13/2023, 6:12:54 PM"
+  },
+  {
+    "key": "DIGGIN_OAK_ISLAND",
+    "itemId": "digginoakisland.podbean.com/4a33be7c-55f1-30cc-b71c-46d6f571157f",
+    "createdOn": "11/13/2023, 6:12:55 PM"
+  },
+  {
+    "key": "DIGGIN_OAK_ISLAND",
+    "itemId": "digginoakisland.podbean.com/13547159-6f6c-3db2-b9e4-5d228c6a40a8",
+    "createdOn": "11/13/2023, 6:12:58 PM"
+  },
+  {
+    "key": "DIGGIN_OAK_ISLAND",
+    "itemId": "digginoakisland.podbean.com/82519fac-3202-3bec-833b-6fcb05f8afb0",
+    "createdOn": "11/13/2023, 6:12:58 PM"
+  },
+  {
+    "key": "DIGGIN_OAK_ISLAND",
+    "itemId": "digginoakisland.podbean.com/658e8ecf-369f-356b-8d91-ce866eb47fcd",
+    "createdOn": "11/13/2023, 6:12:59 PM"
+  },
+  {
+    "key": "DIGGIN_OAK_ISLAND",
+    "itemId": "digginoakisland.podbean.com/52ea1473-3379-39dc-b24a-61077e56619c",
+    "createdOn": "11/13/2023, 6:13:02 PM"
+  },
+  {
+    "key": "DIGGIN_OAK_ISLAND",
+    "itemId": "digginoakisland.podbean.com/d0f05e65-e1f1-3e72-99df-2be5ccde62b5",
+    "createdOn": "11/13/2023, 6:13:02 PM"
+  },
+  {
+    "key": "FOX_NEWS",
+    "itemId": "https://www.foxnews.com/politics/newly-released-photos-show-mysterious-cocaine-discovered-in-white-house",
+    "createdOn": "11/13/2023, 6:19:31 PM"
+  },
+  {
+    "key": "AWS_DEVELOPER",
+    "itemId": "da82e6bfb044b3c867edf9bec143bd375e96e621",
+    "createdOn": "11/13/2023, 6:19:41 PM"
+  },
+  {
+    "key": "AWS_DEVELOPER",
+    "itemId": "6ae6b425bcef8b716f05961e4110b896f8bb3f9d",
+    "createdOn": "11/13/2023, 6:20:06 PM"
+  },
+  {
+    "key": "AWS_DEVELOPER",
+    "itemId": "cc88c0f528046f9e7566baf55d0135379110cad2",
+    "createdOn": "11/13/2023, 6:20:07 PM"
+  },
+  {
+    "key": "AWS_DEVELOPER",
+    "itemId": "ee6cd330345a1622884a420fb580a5e12aa18dfc",
+    "createdOn": "11/13/2023, 6:20:11 PM"
+  },
+  {
+    "key": "AWS_DEVELOPER",
+    "itemId": "918d9f0f59dbe05a084b85f9efb7ce264d5b3cf1",
+    "createdOn": "11/13/2023, 6:20:19 PM"
+  },
+  {
+    "key": "AWS_DEVELOPER",
+    "itemId": "1614e0847a112f09f5b83dfce87a040255395c3d",
+    "createdOn": "11/13/2023, 6:20:27 PM"
+  },
+  {
+    "key": "AWS_DEVELOPER",
+    "itemId": "58eb1539b7306ef632362afbb463bf08df1310c2",
+    "createdOn": "11/13/2023, 6:20:28 PM"
+  },
+  {
+    "key": "CNBC_NEWS",
+    "itemId": "107332894",
+    "createdOn": "11/13/2023, 6:21:47 PM"
+  },
+  {
+    "key": "CNBC_NEWS",
+    "itemId": "107332952",
+    "createdOn": "11/13/2023, 6:21:48 PM"
+  },
+  {
+    "key": "FOX_NEWS",
+    "itemId": "https://www.foxnews.com/entertainment/us-professors-use-pop-culture-icons-taylor-swift-rick-ross-make-law-school-engaging",
+    "createdOn": "11/13/2023, 6:22:02 PM"
+  },
+  {
+    "key": "FOX_NEWS",
+    "itemId": "https://www.foxnews.com/politics/bidens-vs-axelrod-war-words-dates-back-hunter-calling-him-giant-a-hole-during-2016-election",
+    "createdOn": "11/13/2023, 6:22:10 PM"
+  },
+  {
+    "key": "FOX_NEWS",
+    "itemId": "https://www.foxnews.com/sports/haley-cavinder-announces-commitment-tcu-final-year-college-basketball",
+    "createdOn": "11/13/2023, 6:22:12 PM"
+  },
+  {
+    "key": "FOX_NEWS",
+    "itemId": "https://www.foxnews.com/politics/comer-jordan-subpoena-former-white-house-counsel-for-testimony-related-to-bidens-classified-docs",
+    "createdOn": "11/13/2023, 6:22:19 PM"
+  },
+  {
+    "key": "FOX_NEWS",
+    "itemId": "https://www.foxnews.com/sports/wife-legendary-nfl-head-coach-blasts-bill-belichick-urges-retirement-hope-he-never-wins-again",
+    "createdOn": "11/13/2023, 6:22:21 PM"
+  },
+  {
+    "key": "FOX_NEWS",
+    "itemId": "https://www.foxnews.com/us/us-reveals-names-photos-5-special-operators-killed-mediterranean-aircraft-mishap",
+    "createdOn": "11/13/2023, 6:22:26 PM"
+  },
+  {
+    "key": "FOX_NEWS",
+    "itemId": "https://www.foxnews.com/us/texas-former-high-school-girls-soccer-coach-found-guilty-sexually-assaulting-children",
+    "createdOn": "11/13/2023, 6:22:35 PM"
+  },
+  {
+    "key": "FOX_NEWS",
+    "itemId": "https://www.foxnews.com/us/4-injured-louisiana-tech-stabbing-spree",
+    "createdOn": "11/13/2023, 6:22:43 PM"
+  },
+  {
+    "key": "FOX_NEWS",
+    "itemId": "https://www.foxnews.com/us/michigan-man-pleads-guilty-threatening-violent-anti-semitic-attack-online",
+    "createdOn": "11/13/2023, 6:22:44 PM"
+  },
+  {
+    "key": "FOX_NEWS",
+    "itemId": "https://www.foxnews.com/entertainment/euphoria-producer-kevin-turen-dead-44",
+    "createdOn": "11/13/2023, 6:23:06 PM"
+  },
+  {
+    "key": "FOX_NEWS",
+    "itemId": "https://www.foxnews.com/entertainment/actress-singer-conny-van-dyke-dead-78-son-compares-life-britney-spears",
+    "createdOn": "11/13/2023, 6:23:11 PM"
+  },
+  {
+    "key": "FOX_NEWS",
+    "itemId": "https://www.foxnews.com/world/mexicos-ruling-party-dodges-desertion-crisis-leadup-2024-election",
+    "createdOn": "11/13/2023, 6:23:12 PM"
+  },
+  {
+    "key": "BROWNS_WIRE",
+    "itemId": "https://brownswire.usatoday.com/?p=95859",
+    "createdOn": "11/13/2023, 6:34:10 PM"
+  },
+  {
+    "key": "BROWNS_WIRE",
+    "itemId": "https://brownswire.usatoday.com/?p=91252",
+    "createdOn": "11/13/2023, 6:34:12 PM"
   }
 ]
