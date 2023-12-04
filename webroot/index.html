@@ -98,6 +98,13 @@
     </div>
 
     <div class="w3-container w3-margin-bottom">
+        <div hx-get="/title/WERNER_VOGELS" hx-trigger="load delay:2s" class="w3-container w3-amber">
+        </div>
+        <div id="WERNER_VOGELS_ITEMS" hx-get="/items/WERNER_VOGELS" hx-trigger="load delay:3s" class="w3-container w3-hide w3-border w3-border-amber">
+        </div>
+    </div>
+
+    <div class="w3-container w3-margin-bottom">
         <div hx-get="/title/NEWSTACK" hx-trigger="load delay:1s" class="w3-container w3-blue">
         </div>
         <div id="NEWSTACK_ITEMS" hx-get="/items/NEWSTACK" hx-trigger="load delay:2s" class="w3-container w3-hide w3-border w3-border-blue">

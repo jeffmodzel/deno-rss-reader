@@ -35,6 +35,11 @@
       "enabled": true
    },
    {
+      "key": "WERNER_VOGELS",
+      "url": "https://www.allthingsdistributed.com/atom.xml",
+      "enabled": true
+   },
+   {
       "key": "YAHOO_NEWS",
       "url": "https://www.yahoo.com/news/rss",
       "enabled": true
