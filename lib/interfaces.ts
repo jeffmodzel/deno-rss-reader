@@ -1,4 +1,3 @@
-
 /**
  * Configuration definition of a feed. Used "key" instead of "id" because too many "id" fields
  */
@@ -8,7 +7,7 @@ export interface ConfigFeed {
   enabled: boolean;
 }
 
-export interface ExcludeItem { 
+export interface ExcludeItem {
   key: string;
   itemId: string;
   createdOn: string;

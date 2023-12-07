@@ -154,15 +154,14 @@ export const removeItem = (excludeItems: ExcludeItem[], formData: FormData) => {
     const id = formData.get('itemId');
 
     if (!key || !id) {
-      throw new Error('Missing key or itemId'); 
+      throw new Error('Missing key or itemId');
     }
 
     info(`Adding new item to exclude list: key=${key}, item=${id}`);
     excludeItems.push({
       key: `${key}`,
       itemId: `${id}`,
-      createdOn: new Date().toLocaleString()
-
+      createdOn: new Date().toLocaleString(),
     });
   } catch (e) {
     error('Error in removeItem()');

@@ -1,6 +1,6 @@
 import { serveFile } from 'https://deno.land/std@0.202.0/http/file_server.ts';
-import { ConfigFeed, ExcludeItem, DisplayFeed } from './lib/interfaces.ts';
-import { getItemsHtml, getTitleHtml, loadFeeds, removeItem, removeExcludeItems } from './lib/functions.ts';
+import { ConfigFeed, DisplayFeed, ExcludeItem } from './lib/interfaces.ts';
+import { getItemsHtml, getTitleHtml, loadFeeds, removeExcludeItems, removeItem } from './lib/functions.ts';
 import { error, info, warn } from './lib/console.ts';
 
 const RUN_SERVER = true;
@@ -24,7 +24,7 @@ if (import.meta.main) {
   let excludeItems = JSON.parse(text) as ExcludeItem[];
   displayFeeds = removeExcludeItems(displayFeeds, excludeItems);
 
-  const x = displayFeeds.find(x=> x.key==='AWS_DEVELOPER');
+  const x = displayFeeds.find((x) => x.key === 'AWS_DEVELOPER');
   console.log(x);
 
   //
@@ -35,7 +35,6 @@ if (import.meta.main) {
   const ITEMS_ROUTE = new URLPattern({ pathname: '/items/:id' });
 
   const handler = async (request: Request): Promise<Response> => {
-    
     const pathname = new URL(request.url).pathname;
     info(`Request: ${pathname}`);
     console.log(request);
@@ -54,8 +53,8 @@ if (import.meta.main) {
       const formdata = await request.formData();
       excludeItems = removeItem(excludeItems, formdata);
       //console.log(excludeItems);
-      Deno.writeTextFile('excludes.json', JSON.stringify(excludeItems,null,2));
-      info(`New exclude list count: ${excludeItems.length}`); 
+      Deno.writeTextFile('excludes.json', JSON.stringify(excludeItems, null, 2));
+      info(`New exclude list count: ${excludeItems.length}`);
     }
 
     let match = TITLE_ROUTE.exec(request.url);

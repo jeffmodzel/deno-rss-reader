@@ -1723,5 +1723,120 @@
     "key": "AWS_NEWS",
     "itemId": "https://www.aboutamazon.com/news/aws/aws-data-center-economic-impact-study",
     "createdOn": "11/20/2023, 11:11:28 AM"
+  },
+  {
+    "key": "AWS_NEWS",
+    "itemId": "https://www.aboutamazon.com/news/aws/amazon-workspaces-thin-client",
+    "createdOn": "12/4/2023, 10:19:08 AM"
+  },
+  {
+    "key": "AWS_DEVELOPER",
+    "itemId": "06bf8245969a8cc13b823d98e69d076a7e5cded7",
+    "createdOn": "12/4/2023, 10:20:49 AM"
+  },
+  {
+    "key": "AWS_DEVELOPER",
+    "itemId": "9d2678c8f8d5cb7895d96950dd6977fdc9214ab8",
+    "createdOn": "12/4/2023, 10:20:52 AM"
+  },
+  {
+    "key": "AWS_DEVELOPER",
+    "itemId": "0e900e43a5ff14d198642af0694bbfb6f0ec6e8a",
+    "createdOn": "12/5/2023, 11:22:05 AM"
+  },
+  {
+    "key": "AWS_DEVELOPER",
+    "itemId": "6ada213a34aa9ff40fc78699d10ed79c69491261",
+    "createdOn": "12/5/2023, 11:22:05 AM"
+  },
+  {
+    "key": "AWS_DEVELOPER",
+    "itemId": "dec2661063f267efb9a13c4b03041f2f4a5558ae",
+    "createdOn": "12/5/2023, 11:22:10 AM"
+  },
+  {
+    "key": "FOX_NEWS",
+    "itemId": "https://www.foxnews.com/us/missouri-police-chasing-erratic-mobile-home-caught-wild-dashcam-video",
+    "createdOn": "12/5/2023, 11:22:50 AM"
+  },
+  {
+    "key": "FOX_NEWS",
+    "itemId": "https://www.foxnews.com/entertainment/alicia-keys-chart-topping-hits-featured-new-york-musical-spring",
+    "createdOn": "12/5/2023, 11:22:50 AM"
+  },
+  {
+    "key": "FOX_NEWS",
+    "itemId": "https://www.foxnews.com/politics/harvard-mit-upenn-presidents-pressed-race-based-ideology-radical-left-antisemitism-hearing",
+    "createdOn": "12/5/2023, 11:22:51 AM"
+  },
+  {
+    "key": "FOX_NEWS",
+    "itemId": "https://www.foxnews.com/tech/no-humans-needed-here-how-this-robot-heap-builds-walls-all-by-itself",
+    "createdOn": "12/5/2023, 11:23:04 AM"
+  },
+  {
+    "key": "FOX_NEWS",
+    "itemId": "https://www.foxnews.com/politics/arkansas-bars-young-turks-host-cenk-uygur-democratic-presidential-primary",
+    "createdOn": "12/5/2023, 11:23:06 AM"
+  },
+  {
+    "key": "FOX_NEWS",
+    "itemId": "https://www.foxnews.com/media/biden-allies-desperate-win-new-hampshire-primary-avoid-humiliation-report",
+    "createdOn": "12/5/2023, 11:23:10 AM"
+  },
+  {
+    "key": "BROWNS_WIRE",
+    "itemId": "https://brownswire.usatoday.com/?post_type=listicle&p=97042",
+    "createdOn": "12/5/2023, 11:26:06 AM"
+  },
+  {
+    "key": "YAHOO_NEWS",
+    "itemId": "chilling-moment-liz-cheney-says-151853348.html",
+    "createdOn": "12/5/2023, 11:26:44 AM"
+  },
+  {
+    "key": "YAHOO_NEWS",
+    "itemId": "former-burglar-jailed-10-years-105158048.html",
+    "createdOn": "12/5/2023, 11:27:07 AM"
+  },
+  {
+    "key": "YAHOO_NEWS",
+    "itemId": "russia-women-demand-return-men-090538727.html",
+    "createdOn": "12/5/2023, 11:27:11 AM"
+  },
+  {
+    "key": "YAHOO_NEWS",
+    "itemId": "fox-news-brit-hume-gives-045957514.html",
+    "createdOn": "12/5/2023, 11:27:21 AM"
+  },
+  {
+    "key": "YAHOO_NEWS",
+    "itemId": "sharks-vs-crocodile-anglers-watch-193525306.html",
+    "createdOn": "12/5/2023, 11:27:28 AM"
+  },
+  {
+    "key": "YAHOO_NEWS",
+    "itemId": "four-republicans-stage-fourth-presidential-012007826.html",
+    "createdOn": "12/5/2023, 11:27:49 AM"
+  },
+  {
+    "key": "YAHOO_NEWS",
+    "itemId": "homeowner-stunned-returning-home-neighbor-210000046.html",
+    "createdOn": "12/5/2023, 11:27:52 AM"
+  },
+  {
+    "key": "YAHOO_NEWS",
+    "itemId": "elon-musk-reportedly-speechless-someone-173536415.html",
+    "createdOn": "12/5/2023, 11:27:58 AM"
+  },
+  {
+    "key": "NEWSTACK",
+    "itemId": "https://thenewstack.io/?p=22723591",
+    "createdOn": "12/5/2023, 11:29:30 AM"
+  },
+  {
+    "key": "NEWSTACK",
+    "itemId": "https://thenewstack.io/?p=22726249",
+    "createdOn": "12/5/2023, 11:29:31 AM"
   }
 ]

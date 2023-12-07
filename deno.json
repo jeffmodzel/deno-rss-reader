@@ -12,7 +12,7 @@
          "semiColons": true,
          "singleQuote": true,
          "proseWrap": "preserve",
-         "include": ["*.ts","lib/**/*.ts","lib/services/*.ts"],
+         "include": ["*.ts","lib/**/*.ts","lib/services/*.ts","lib/*.ts"],
          "exclude": ["src/testdata/", "data/fixtures/**/*.ts"]
        }
      }
